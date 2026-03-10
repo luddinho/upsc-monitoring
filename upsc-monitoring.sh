@@ -129,8 +129,10 @@ fi
 # Collect data from upsc
 # Use local USB connection if ups_local is set to true, otherwise use network connection
 if [ "${ups_local,,}" = "true" ]; then
+    upsc_command="upsc $ups_name"
     DATA=$(upsc $ups_name 2>/dev/null)
 else
+    upsc_command="upsc $ups_name@$ups_host:$ups_port"
     DATA=$(upsc $ups_name@$ups_host:$ups_port 2>/dev/null)
 fi
 
@@ -217,6 +219,7 @@ line="ups_status,host=$hostname $fields $timestamp"
 if [ "$dry_run" = true ]; then
     echo "=== DRY RUN MODE - No data sent to InfluxDB ==="
     echo ""
+    echo "UPS Command: $upsc_command"
     echo "Hostname: $hostname"
     echo "Timestamp: $timestamp"
     echo ""
