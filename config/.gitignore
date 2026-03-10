@@ -1,0 +1,7 @@
+# Ignore all files in this directory
+*
+
+# But track these files
+!.gitignore
+!config.example.conf
+!upsc-grafana-dashboard.json
