@@ -64,6 +64,7 @@ if [ -n "$config_file" ]; then
             ups_host) ups_host="$value" ;;
             ups_port) ups_port="$value" ;;
             ups_name) ups_name="$value" ;;
+            ups_local) ups_local="$value" ;;
             influx_server) influx_server="$value" ;;
             influx_port) influx_port="$value" ;;
             influx_bucket) influx_bucket="$value" ;;
@@ -126,7 +127,12 @@ fi
 
 
 # Collect data from upsc
-DATA=$(upsc $ups_name@$ups_host:$ups_port 2>/dev/null)
+# Use local USB connection if ups_local is set to true, otherwise use network connection
+if [ "${ups_local,,}" = "true" ]; then
+    DATA=$(upsc $ups_name 2>/dev/null)
+else
+    DATA=$(upsc $ups_name@$ups_host:$ups_port 2>/dev/null)
+fi
 
 # Parse relevant fields
 battery_charge=$(echo "$DATA"           | grep "battery.charge:"            | grep -v "battery.charge.low" | awk '{print $2}')

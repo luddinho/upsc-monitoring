@@ -59,9 +59,14 @@ influx_token=ihr-influxdb-token-hier
 # influx_token_file=/pfad/zur/token.txt
 
 # USV-Überwachungseinstellungen
+ups_name=ups
+
+# Für netzwerkverbundene USV (über NUT-Server)
 ups_host=192.168.1.50
 ups_port=3493
-ups_name=ups
+
+# Für lokal USB-verbundene USV (auskommentieren und auf true setzen)
+# ups_local=true
 ```
 
 ### Konfigurationsparameter
@@ -74,11 +79,14 @@ ups_name=ups
 | `influx_org` | InfluxDB-Organisation | Ja | - |
 | `influx_token` | InfluxDB-Authentifizierungstoken | Ja* | - |
 | `influx_token_file` | Pfad zur Datei mit Token | Ja* | - |
-| `ups_host` | USV-Host-IP-Adresse | Ja | - |
-| `ups_port` | USV-NUT-Server-Port | Ja | - |
 | `ups_name` | USV-Gerätename | Ja | - |
+| `ups_host` | USV-Host-IP-Adresse | Ja** | - |
+| `ups_port` | USV-NUT-Server-Port | Ja** | - |
+| `ups_local` | Auf `true` setzen für lokale USB-USV | Nein | false |
 
 *Entweder `influx_token` oder `influx_token_file` muss angegeben werden.
+
+**Nicht erforderlich wenn `ups_local=true`.
 
 ## Verwendung
 

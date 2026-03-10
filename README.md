@@ -63,9 +63,14 @@ influx_token=your-influxdb-token-here
 # influx_token_file=/path/to/token.txt
 
 # UPS monitoring settings
+ups_name=ups
+
+# For network-connected UPS (via NUT server)
 ups_host=192.168.1.50
 ups_port=3493
-ups_name=ups
+
+# For local USB-connected UPS (uncomment and set to true)
+# ups_local=true
 ```
 
 #### Configuration Parameters
@@ -78,11 +83,14 @@ ups_name=ups
 | `influx_org` | InfluxDB organization | Yes | - |
 | `influx_token` | InfluxDB authentication token | Yes* | - |
 | `influx_token_file` | Path to file containing token | Yes* | - |
-| `ups_host` | UPS host IP address | Yes | - |
-| `ups_port` | UPS NUT server port | Yes | - |
 | `ups_name` | UPS device name | Yes | - |
+| `ups_host` | UPS host IP address | Yes** | - |
+| `ups_port` | UPS NUT server port | Yes** | - |
+| `ups_local` | Set to `true` for local USB UPS | No | false |
 
 *Either `influx_token` or `influx_token_file` must be provided.
+
+**Not required when `ups_local=true`.
 
 ### Usage
 
