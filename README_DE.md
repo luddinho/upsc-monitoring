@@ -88,11 +88,25 @@ Skript mit Konfigurationsdatei ausführen:
 ./upsc-monitoring.sh -c config/my-ups.conf
 ```
 
-Oder Hilfe anzeigen:
+Skript testen ohne Daten an InfluxDB zu senden (Dry-Run-Modus):
+
+```bash
+./upsc-monitoring.sh -c config/my-ups.conf --dry-run
+```
+
+Hilfe anzeigen:
 
 ```bash
 ./upsc-monitoring.sh -h
 ```
+
+### Kommandozeilenoptionen
+
+| Option | Beschreibung |
+|--------|-------------|
+| `-c, --config <datei>` | Pfad zur Konfigurationsdatei (erforderlich) |
+| `-n, --dry-run` | USV-Werte ausgeben ohne an InfluxDB zu senden |
+| `-h, --help` | Hilfenachricht anzeigen |
 
 ## Überwachte Metriken
 

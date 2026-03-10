@@ -92,11 +92,25 @@ Run the script with a configuration file:
 ./upsc-monitoring.sh -c config/my-ups.conf
 ```
 
-Or display help:
+Test the script without sending data to InfluxDB (dry-run mode):
+
+```bash
+./upsc-monitoring.sh -c config/my-ups.conf --dry-run
+```
+
+Display help:
 
 ```bash
 ./upsc-monitoring.sh -h
 ```
+
+#### Command-line Options
+
+| Option | Description |
+|--------|-------------|
+| `-c, --config <file>` | Path to configuration file (required) |
+| `-n, --dry-run` | Print UPS values without sending to InfluxDB |
+| `-h, --help` | Display help message |
 
 ### Monitored Metrics
 
