@@ -1,6 +1,6 @@
 # UPS Monitoring Script
 
-[Deutsche Version](README_DE.md) | [English Version](#english-version)
+**[🇩🇪 Deutsche Version](README_DE.md)** | **[🇬🇧 English Version](#english-version)**
 
 ---
 
