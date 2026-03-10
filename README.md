@@ -117,7 +117,7 @@ Display help:
 | Option | Description |
 |--------|-------------|
 | `-c, --config <file>` | Path to configuration file (required) |
-| `-n, --dry-run` | Print UPS values without sending to InfluxDB |
+| `-n, --dry-run` | Print UPS command, values, and InfluxDB line protocol without sending data |
 | `-h, --help` | Display help message |
 
 ### Monitored Metrics

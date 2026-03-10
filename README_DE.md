@@ -113,7 +113,7 @@ Hilfe anzeigen:
 | Option | Beschreibung |
 |--------|-------------|
 | `-c, --config <datei>` | Pfad zur Konfigurationsdatei (erforderlich) |
-| `-n, --dry-run` | USV-Werte ausgeben ohne an InfluxDB zu senden |
+| `-n, --dry-run` | USV-Befehl, Werte und InfluxDB-Protokoll ausgeben ohne Daten zu senden |
 | `-h, --help` | Hilfenachricht anzeigen |
 
 ## Überwachte Metriken
