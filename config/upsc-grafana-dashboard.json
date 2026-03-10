@@ -239,7 +239,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "/^ups_status wkpi1005$/",
+          "fields": "",
           "values": false
         },
         "showPercentChange": false,
@@ -294,7 +294,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "/^ups_beeper_status wkpi1005$/",
+          "fields": "",
           "values": false
         },
         "showPercentChange": false,
@@ -354,7 +354,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "/^input_voltage_extended wkpi1005$/",
+          "fields": "",
           "values": false
         },
         "showPercentChange": false,
@@ -1565,7 +1565,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "ups_realpower wkpi1005"
+              "options": "ups_realpower"
             },
             "properties": [
               {
@@ -1580,7 +1580,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "ups_power wkpi1005"
+              "options": "ups_power"
             },
             "properties": [
               {

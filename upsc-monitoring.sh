@@ -165,7 +165,7 @@ ups_timer_start=$(echo "$DATA"          | grep "ups.timer.start:"           | aw
 # InfluxDB line protocol format:
 # measurement,tag1=value1,tag2=value2 field1=value1,field2=value2 timestamp
 # For our case:
-# ups_status,host=hostname battery_charge=85,battery_charge_low=20,battery_runtime=120,input_frequency=50,input_transfer_high=240,input_transfer_low=200,input_voltage=230,output_frequency=50,output_frequency_nominal=50,output_voltage=230,output_voltage_nominal=230,ups_beeper_status="ON",ups_delay_shutdown=10,ups_delay_start=5,ups_load=50,ups_power=100,ups_power_nominal=120,ups_realpower=95,ups_status="OL",ups_timer_shutdown=30,ups_timer_start=15 1690000000000000000
+# ups_status battery_charge=85,battery_charge_low=20,battery_runtime=120,input_frequency=50,input_transfer_high=240,input_transfer_low=200,input_voltage=230,output_frequency=50,output_frequency_nominal=50,output_voltage=230,output_voltage_nominal=230,ups_beeper_status="ON",ups_delay_shutdown=10,ups_delay_start=5,ups_load=50,ups_power=100,ups_power_nominal=120,ups_realpower=95,ups_status="OL",ups_timer_shutdown=30,ups_timer_start=15 1690000000000000000
 # -----------------------------------------------------------------------
 timestamp=$(date +%s%N) # Current time in nanoseconds
 hostname=$(hostname)
@@ -212,7 +212,7 @@ if [ -z "$fields" ]; then
     exit 1
 fi
 
-line="ups_status,host=$hostname $fields $timestamp"
+line="ups_status $fields $timestamp"
 
 
 # Send data to InfluxDB or print in dry-run mode
