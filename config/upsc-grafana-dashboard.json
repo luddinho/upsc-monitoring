@@ -239,7 +239,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "",
+          "fields": "/^ups_status$/",
           "values": false
         },
         "showPercentChange": false,
@@ -294,7 +294,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "",
+          "fields": "/^ups_beeper_status$/",
           "values": false
         },
         "showPercentChange": false,
@@ -354,7 +354,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "",
+          "fields": "/^input_voltage_extended$/",
           "values": false
         },
         "showPercentChange": false,
@@ -1653,6 +1653,6 @@
   "timezone": "browser",
   "title": "upsc-monitoring",
   "uid": "ad9tdz8",
-  "version": 65,
+  "version": 72,
   "weekStart": ""
 }
