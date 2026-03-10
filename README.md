@@ -144,9 +144,9 @@ crontab -e
 ### Grafana Dashboard
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="upsc-monitoring-grafana-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="upsc-monitoring-grafana-bright.png">
-  <img alt="UPS Monitoring Dashboard" src="upsc-monitoring-grafana-bright.png">
+  <source media="(prefers-color-scheme: dark)" srcset="images/upsc-monitoring-grafana-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/upsc-monitoring-grafana-bright.png">
+  <img alt="UPS Monitoring Dashboard" src="images/upsc-monitoring-grafana-bright.png">
 </picture>
 
 The `config` folder contains example Grafana dashboard JSON files that can be imported to visualize your UPS metrics:

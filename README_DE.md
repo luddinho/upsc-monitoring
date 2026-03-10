@@ -140,9 +140,9 @@ crontab -e
 ## Grafana-Dashboard
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="upsc-monitoring-grafana-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="upsc-monitoring-grafana-bright.png">
-  <img alt="USV-Überwachungs-Dashboard" src="upsc-monitoring-grafana-bright.png">
+  <source media="(prefers-color-scheme: dark)" srcset="images/upsc-monitoring-grafana-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/upsc-monitoring-grafana-bright.png">
+  <img alt="USV-Überwachungs-Dashboard" src="images/upsc-monitoring-grafana-bright.png">
 </picture>
 
 Der `config`-Ordner enthält Beispiel-Grafana-Dashboard-JSON-Dateien, die importiert werden können, um Ihre USV-Metriken zu visualisieren:
