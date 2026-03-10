@@ -169,7 +169,7 @@ Der `config`-Ordner enthält Beispiel-Grafana-Dashboard-JSON-Dateien, die import
 
 ## Lizenz
 
-Dieses Projekt wird ohne Gewährleistung bereitgestellt. Frei zur Verwendung und Änderung für Ihre Bedürfnisse.
+Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die [LICENSE](LICENSE) Datei für Details.
 
 ## Autor
 

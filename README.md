@@ -170,7 +170,7 @@ The `config` folder contains example Grafana dashboard JSON files that can be im
 
 ### License
 
-This project is provided as-is without warranty. Feel free to use and modify for your needs.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### Author
 
