@@ -1,6 +1,6 @@
 # USV-Überwachungsskript
 
-**[🇬🇧 English Version](README.md)** | **[🇩🇪 Deutsche Version](#deutsche-version)**
+Sprache: 🇩🇪 Deutsch | [🇬🇧 English](README.md)
 
 Ein Bash-Skript zur Überwachung von Unterbrechungsfreien Stromversorgungen (USV) und zur Übermittlung der Metriken an InfluxDB für Echtzeit-Monitoring und Visualisierung.
 
